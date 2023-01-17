@@ -1,0 +1,43 @@
+@use "@/theme/colors";
+
+.wrapper {
+  input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: colors.$text_sub;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid colors.$input;
+    padding: 18px 0px 8px 4px;
+
+    transition: 0.2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.error {
+      border-bottom: 1px solid colors.$error;
+    }
+  }
+
+  &_error {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: colors.$error;
+    margin-top: 4px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+
+    &.error {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

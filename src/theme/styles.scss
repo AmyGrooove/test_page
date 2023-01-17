@@ -1,0 +1,30 @@
+@use "@/theme/colors";
+
+* {
+  font-family: "Manrope";
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: colors.$background;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.backSide {
+  z-index: -1;
+}
+
+.swiper {
+  z-index: 0 !important;
+}
+
+.swiper-wrapper {
+  max-width: 1280px;
+}

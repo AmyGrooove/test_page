@@ -1,0 +1,40 @@
+{
+  "name": "bisky",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "lint:fix": "next lint --fix"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "next": "^12.3.1",
+    "next-transpile-modules": "^10.0.0",
+    "react": "^18.2.0",
+    "react-app": "^1.1.2",
+    "react-dom": "^18.2.0",
+    "swiper": "^8.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "eslint": "^8.32.0",
+    "eslint-config-react-app": "^7.0.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

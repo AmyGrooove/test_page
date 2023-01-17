@@ -1,0 +1,76 @@
+@use "@/theme/colors";
+
+.container {
+  background-color: colors.$main;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+
+    &_left {
+      display: flex;
+      align-items: center;
+      height: 94px;
+      gap: 104px;
+
+      &_menu {
+        display: flex;
+        gap: 32px;
+
+        li {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: colors.$text_sub;
+          cursor: pointer;
+          transition: 0.2s;
+          border-bottom: 1px solid transparent;
+
+          &:hover {
+            color: colors.$text_main;
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
+
+    &_right {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+
+      &_item {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: colors.$main_dark;
+        }
+
+        &_notification {
+          border-radius: 100px;
+          background-color: colors.$text_main;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          color: colors.$text_sub;
+          font-size: 14px;
+          margin-top: 14px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use "@/theme/colors";
+
+.container {
+  cursor: pointer;
+  width: 104px;
+
+  &_label {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    &_text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: colors.$text_sub;
+    }
+  }
+
+  &_menu {
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: 0.2s;
+    width: 160px;
+    padding-top: 8px;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      background-color: colors.$main;
+      text-decoration: none;
+      color: colors.$text_sub;
+      padding-left: 8px;
+
+      transition: 0.2s;
+
+      &:hover {
+        background-color: colors.$main_dark;
+      }
+    }
+  }
+
+  &:hover {
+    .container_menu {
+      visibility: visible;
+      opacity: 1;
+      position: absolute;
+    }
+  }
+}

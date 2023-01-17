@@ -1,0 +1,70 @@
+@use "@/theme/colors";
+
+.container {
+  margin-top: 96px;
+
+  &_title {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+
+    &_link {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 33px;
+        height: 33px;
+        filter: invert(63%) sepia(8%) saturate(1868%) hue-rotate(353deg)
+          brightness(93%) contrast(87%);
+      }
+
+      &_text {
+        font-family: "Grafita";
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 64px;
+        color: colors.$text_main;
+      }
+    }
+  }
+
+  &_fullLink {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: colors.$text_main;
+
+    max-width: 1280px;
+
+    margin: 32px auto;
+
+    transition: 0.2s;
+
+    &:hover {
+      color: colors.$text_sub;
+    }
+  }
+
+  &_swiper {
+    &_item {
+      max-width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: auto;
+
+      &:last-child {
+        div {
+          width: 300px;
+          height: 1px;
+        }
+      }
+    }
+  }
+}

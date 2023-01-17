@@ -1,0 +1,39 @@
+@use "@/theme/colors";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 64px;
+
+  &::before {
+    width: 1000px;
+    height: 1px;
+    background-color: colors.$text_main;
+    content: "";
+    position: absolute;
+    left: -1100px;
+  }
+
+  &_circle {
+    border: 1px solid #a18460;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    background-color: colors.$background;
+    position: absolute;
+
+    &:nth-child(1) {
+      left: -100px;
+    }
+
+    &:nth-child(2) {
+      left: -70px;
+    }
+
+    &:nth-child(3) {
+      left: -40px;
+    }
+  }
+}
